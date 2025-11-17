@@ -36,14 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://cantinedecaron.nl/?gad_source=1&gad_campaignid=22330118349&gbraid=0AAAAABLONSbHS6bwGDbGi13sj9Ip8PAEZ&gclid=Cj0KCAiAlMHIBhAcEi0AZhZBUj-34_m13Zkq9jlBeCaFBq1JF4pVOrnBMQ-z9wo2cHzlwi95QcKgWFAaAoHSEALw_wcB
+https://www.restaurantroux.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  home pagina (Cantine de caron)  
+  home pagina (Restaurant roux)  
   <img src="readme-images/homepagina.png" width="375px" alt="over ons">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Over ons
+  Contact
   <img src="readme-images/overons.png" width="375px" alt="over ons">
   <img src="readme-images/overonstekst.png" width="375px" alt="over ons">
  
