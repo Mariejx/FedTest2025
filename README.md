@@ -40,7 +40,7 @@ https://www.restaurantroux.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home pagina (Restaurant roux)  
-  <img src="readme-images/homepagina.png" width="375px" alt="over ons">
+  <img src="readme-images/rouxcontact.jpg" width="375px" alt="over ons">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Contact
