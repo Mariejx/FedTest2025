@@ -40,12 +40,13 @@ https://www.restaurantroux.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home pagina (Restaurant roux)  
-  <img src="readme-images/rouxcontact.jpg" width="375px" alt="over ons">
+  <img src="readme-images/rouxhome.jpg" width="375px" alt="home">
+  readme-images/rouxhome.jpg
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Contact
-  <img src="readme-images/overons.png" width="375px" alt="over ons">
-  <img src="readme-images/overonstekst.png" width="375px" alt="over ons">
+  <img src="readme-images/rouxcontact.jpg" width="375px" alt="Contact">
+  
  
 </details>
 
@@ -57,7 +58,10 @@ https://www.restaurantroux.nl
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: 
+  - spasmes apparaat
+  - Twee brillen
+  - Baut website: De website is best wel oke gedaan qua toegangelijkheid. wat ik wel mis is dat er als er plaatjes zijn dat die niet worden genoemd. Er word ook gezegt dat als er een link of knop is dat je daarop kon drukken (link). de knop EN doet het wel alleen het blijft op NL staan. Je kan ook niet terug naar de home screen.
 
 </details>
 
