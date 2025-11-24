@@ -36,16 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-https://www.restaurantroux.nl
+ Yoisho (is een website waar je matcha kan kopen)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  home pagina (Restaurant roux)  
-  <img src="readme-images/rouxhome.jpg" width="375px" alt="home">
+  home pagina (Yoisho)  
+  <img src="" width="375px" alt="home">
   readme-images/rouxhome.jpg
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Contact
-  <img src="readme-images/rouxcontact.jpg" width="375px" alt="Contact">
+  Blog pagina
+  <img src="" width="375px" alt="Contact">
   
  
 </details>
@@ -62,6 +62,7 @@ https://www.restaurantroux.nl
   - spasmes apparaat
   - Twee brillen
   - Baut website: De website is best wel oke gedaan qua toegangelijkheid. wat ik wel mis is dat er als er plaatjes zijn dat die niet worden genoemd. Er word ook gezegt dat als er een link of knop is dat je daarop kon drukken (link). de knop EN doet het wel alleen het blijft op NL staan. Je kan ook niet terug naar de home screen.
+  - Ik heb uiteindelijke gekozen voor een andere website, omdat die makkelijker is qua indeling en hoe het er uit zien. en genoeg variaties.
 
 </details>
 
@@ -79,7 +80,7 @@ https://www.restaurantroux.nl
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-pla" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
