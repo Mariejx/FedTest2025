@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Blog pagina
-  <img src="readme-images/Blogyoisho.png" width="375px" alt="Contact">
+  <img src="readme-images/blogiphoneyoisho.png" width="375px" alt="Contact">
   
  
 </details>
