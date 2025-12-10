@@ -137,13 +137,15 @@ het lukt mij niet op de hamburger menu goed te maken.
   samen met je groepje opstellen
 - Hoe maak ik een hamburger menu? hebhetvia codepen gedaan alleen het werkt nog steeds niet.
 - Ik weet niet waar ik moet beginnen. met de webiste (erg veel moeite mee)
-   Fot
+   Foto, moeten mobile worden.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - We Hebben samen gekeken naar de Menu balk.
+  - We Hebben samen gekeken naar de Menu balk, ik had eindelijk een in javascript code nog niet weg gehaald. dus het gelukkig gelukt.
+  - En ook gekeken naar de foto's. Welke formaat het nodig is en hoe ik het beste het kan doen.
+  - Verder gevraagd naar toe ik het beste hamburgermenu kan stijlen met een achtergrond en tekst. 
 
 </details>
 
