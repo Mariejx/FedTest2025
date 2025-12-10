@@ -130,22 +130,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-het lukt mij niet op de hamburger menu goed te maken. het gaat matig.
+het lukt mij niet op de hamburger menu goed te maken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 - Hoe maak ik een hamburger menu? hebhetvia codepen gedaan alleen het werkt nog steeds niet.
 - Ik weet niet waar ik moet beginnen. met de webiste (erg veel moeite mee)
+   Fot
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - We Hebben samen gekeken naar de Menu balk.
 
 </details>
 
