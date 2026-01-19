@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Blog pagina
-  <img src="readme-images/blogiphoneyoisho.png" width="375px" alt="Contact">
+  <img src="readme-images/ProductpginaCeremonial.png" width="375px" alt="Contact">
   
  
 </details>
@@ -103,18 +103,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  --
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  -  ik moest een andere pagina kiezen, de pagina die ik eerst wilde doen zat geen variatie.
+  - verder was de uitgekozen website goed.
   - nog een punt
   - ...
 
@@ -174,25 +169,20 @@ het lukt mij niet op de hamburger menu goed te maken.
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik vinde coderen erg lastig. vin eerlijk gezegt ook echt niet mijn vak. ik heb het geprobeerd. opzich wel een beetje troys dat het wel responive is voor de telefoon.
+  maar dingen moet wel anders. maar dat lukte niet mee.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - meeting niet gedaan, hoefde niet perse te komen. (het was online)
 
 </details>
 
@@ -217,6 +207,8 @@ het lukt mij niet op de hamburger menu goed te maken.
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  bij de echte site heb je aan de rechter kant de hamburger en winkelmandje alleen die zijn wit. maar op de product pagin azijn de bruin. dat lukte niet op het te veranderen.
+  daardoor zou het meer toegangelijk zijn. en hoe als je op add to cart drukt dat hij dan in je winkel staat.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
