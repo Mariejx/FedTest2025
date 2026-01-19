@@ -76,7 +76,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/Homepaginasheet.png" width="375px" alt="breakdown van de hele pagina">
 
-   <img src="readme-images/Blogpaginasheet.png" width="375px" alt="breakdown van de hele pagina">
+   <img src="readme-images/ProductpginaCeremonial" width="375px" alt="breakdown van de hele pagina">
   
 
   ### dynamisch deel (bijv menu): 
@@ -202,7 +202,7 @@ het lukt mij niet op de hamburger menu goed te maken.
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/addtocartfout.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -210,7 +210,7 @@ het lukt mij niet op de hamburger menu goed te maken.
   bij de echte site heb je aan de rechter kant de hamburger en winkelmandje alleen die zijn wit. maar op de product pagin azijn de bruin. dat lukte niet op het te veranderen.
   daardoor zou het meer toegangelijk zijn. en hoe als je op add to cart drukt dat hij dan in je winkel staat.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/buttonwhite.png" width="375px" alt="bummer">
 </details>
 
 
@@ -226,8 +226,8 @@ het lukt mij niet op de hamburger menu goed te maken.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://lucide.dev/ voor icoontjes
+  2. https://developer.mozilla.org/ hamburgermenu (de meeste dingen komen hier vandaan)
+  3. https://assets.codepen.io/274456/ui-icon-hamburger.svg
 
 </details>
