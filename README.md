@@ -155,6 +155,16 @@ het lukt mij niet op de hamburger menu goed te maken.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - video's en foto's werden niet genoemd
+  - te veel h1 zet er in wat niet semanisch is.
+  - verder word alles wel duidelijk uitgelegt
+
+  - nieuwe
+  - afbeeldingen word uitgelegt
+  - 1X h1
+  - link word duideluik gezet
+  - video word niet uitgelegt
+  - button word ook uitgelegd
 
 </details>
 
@@ -182,7 +192,7 @@ het lukt mij niet op de hamburger menu goed te maken.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - meeting niet gedaan, hoefde niet perse te komen. (het was online)
+  - meeting niet gedaan, hoefde niet perse te komen. (het was online) een vriend heeft mij geholpen.
 
 </details>
 
