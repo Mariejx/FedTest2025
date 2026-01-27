@@ -267,6 +267,10 @@ Er wordt niet aangegeven dat het om video’s gaat.
 Er wordt ook niet verteld wat er gebeurt (bijvoorbeeld bij afspelen).
 Het is onduidelijk of je de video kunt pauzeren.
 
+
+Ik heb de twee belangrijkste pagina in de readme gezet. Voor de toegangelijkheids test waren dit de belangrijkste punten.
+<img src="readme-images/IMG_2344.HEIC" width="375px" alt="top">
+<img src="readme-images/IMG_2343.HEIC" width="375px" alt="top">
 De nieuwe website:
 Alle elementen worden correct aangekondigd.
 Er is nu een H1-kop aanwezig.
@@ -275,9 +279,8 @@ Afbeeldingen worden allemaal uitgelegd.
 Buttons worden correct herkend en benoemd.
 Links worden duidelijk aangekondigd.
 Kopniveaus zijn hoorbaar (heading levels werken goed).
-  
-  <img src="readme-images/IMG_2344.HEIC" width="375px" alt="top">
-  <img src="readme-images/IMG_2343.HEIC" width="375px" alt="top">
+
+wat het niet gelukt is toch alle classes weghalen. niks lukte dus ik heb wel erin gehouden.
 
 
 
