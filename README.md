@@ -196,6 +196,13 @@ het lukt mij niet op de hamburger menu goed te maken.
 
 </details>
 
+Herkansing:
+Tijdens mijn gesprek met Danny heb ik feedback gekregen op mijn project. Deze feedback helpt mij om mijn werk te verbeteren, zodat ik het opnieuw kan inleveren en het vak kan halen.
+Ik moet nog screenshots van de a11y-tests toevoegen aan mijn README.md en procesverslag. Ook ontbreekt de surface plane; hiervoor moet ik vijf verschillende onderwerpen kiezen. Daarnaast moet ik het kruisje en de animatie toevoegen aan de micro-interactie.
+In mijn HTML zijn sommige div-elementen beter te vervangen door section, en sommige section-elementen missen een heading of zouden beter article kunnen zijn. Verder moet ik zoveel mogelijk classes weghalen en meer gebruikmaken van bestaande CSS-selectors, zoals nth-child, om dubbele styling te voorkomen.
+Ook moet ik de Lucide-iconen vervangen door SVG’s en mijn CSS-bestanden beter structureren (bijvoorbeeld general.css, page1.css en page2.css). Tot slot moet ik overstappen op relative units zoals em, vw en vh in plaats van pixels.
+Met deze verbeterpunten ga ik mijn project aanpassen voor de herinlevering.
+
 
 
 
@@ -206,7 +213,7 @@ het lukt mij niet op de hamburger menu goed te maken.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uiktomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -222,6 +229,29 @@ het lukt mij niet op de hamburger menu goed te maken.
 
   <img src="readme-images/buttonwhite.png" width="375px" alt="bummer">
 </details>
+
+Herkansing:
+Tijdens mijn gesprek met Danny heb ik feedback gekregen op mijn project. Deze feedback helpt mij om mijn werk te verbeteren, zodat ik het opnieuw kan inleveren en het vak kan halen.
+Ik moet nog screenshots van de a11y-tests toevoegen aan mijn README.md en procesverslag. Ook ontbreekt de surface plane; hiervoor moet ik vijf verschillende onderwerpen kiezen. Daarnaast moet ik het kruisje en de animatie toevoegen aan de micro-interactie.
+In mijn HTML zijn sommige div-elementen beter te vervangen door section, en sommige section-elementen missen een heading of zouden beter article kunnen zijn. Verder moet ik zoveel mogelijk classes weghalen en meer gebruikmaken van bestaande CSS-selectors, zoals nth-child, om dubbele styling te voorkomen.
+Ook moet ik de Lucide-iconen vervangen door SVG’s en mijn CSS-bestanden beter structureren (bijvoorbeeld general.css, page1.css en page2.css). Tot slot moet ik overstappen op relative units zoals em, vw en vh in plaats van pixels.
+Met deze verbeterpunten ga ik mijn project aanpassen voor de herinlevering.
+
+
+
+Wat mij niet lukte was om: een de winkelmadje actief te maken
+vond het ook erg moeilijk om classes niet te gebruiken.
+ik heb verschillende surface plane gedaan.
+
+
+  ### Je uitkomst - karakteristiek screenshots:
+  <img src="" width="375px" alt="uiktomst opdracht 1">
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Korte omschrijving met plaatjes
+
+  <img src="g" width="375px" alt="top">
 
 
 
@@ -239,5 +269,15 @@ het lukt mij niet op de hamburger menu goed te maken.
   1. https://lucide.dev/ voor icoontjes
   2. https://developer.mozilla.org/ hamburgermenu (de meeste dingen komen hier vandaan)
   3. https://assets.codepen.io/274456/ui-icon-hamburger.svg
+  4. https://gemini.google.com/share/28ef546ad769 accoument
+  5. 1.⁠ ⁠White bag icon: https://www.hiclipart.com/free-transparent-background-png-clipart-jgvra/download
+
+⁠White search icon: https://www.citypng.com/png-download/21199
+
+ Black Search icon: https://pngtree.com/freepng/vector-search-icon_3783210.html
+
+Black bag Icon: https://www.hiclipart.com/free-transparent-background-png-clipart-iqbog
+
+ Github Copilot AI: https://github.com/copilot?utm_campaign=2025mar-em-MSFT-signup&utm_medium=second&utm_source=vscode-completions-readme
 
 </details>
