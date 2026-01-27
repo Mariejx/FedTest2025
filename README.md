@@ -244,13 +244,14 @@ ik heb verschillende surface plane gedaan.
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-
-  <img src="" width="375px" alt="top">
-
-  toegangelijkheids test:
-  op alle twee de foto's staat test 1 naast de de andere dat waren de eerste testen met de website die ik wilde maken. doordat ik eerst een andere webiste wilde doen.
+Heb het schuifje uit gevonden. Voor wat ik kan vond ik dit best moeilijk maar uiteindlijk is het gelukt.
+  <img src="readme-images/fotogood.png" width="375px" alt="top">
   
-  Pagina 1
+
+toegangelijkheids test:
+op alle twee de foto's staat test 1 naast de de andere dat waren de eerste testen met de website die ik wilde maken. doordat ik eerst een andere webiste wilde doen.
+  
+Pagina 1
 De header wordt volledig als link voorgelezen.
 Er ontbreekt een H1-kop.
 Bundles
