@@ -239,7 +239,8 @@ ik heb verschillende surface plane gedaan.
 
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="" width="375px" alt="uiktomst opdracht 1">
+  <img src="readme-images/newpage1.png" width="375px" alt="uiktomst opdracht 1">
+  <img src="readme-images/screenshotnieuwescherm.png" width="375px" alt="totale uitkomst">
 
 
   ### Dit ging goed/Heb ik geleerd: 
