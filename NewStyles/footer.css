@@ -1,0 +1,368 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica', sans-serif; background-color: #fcf9f3; overflow-x: hidden; }
+/* 1. DE :ROOT (Variabelen goed gezet) */
+:root {
+  --color-text: #000000;         /* Zwart in plaats van transparant */
+  --color-background: #faf4f1;
+  --color-primary: #3c261d;      /* Donkerbruin */
+  --color-second: #ffffff;       /* Wit */
+  --color-three: #e32c2c;        /* Rood */
+}
+
+
+
+footer { 
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.site-footer {
+  background-color: #4a2c22; 
+  color: var(--color-second);
+  padding: 3.75rem 5%;
+  font-family: sans-serif;
+}
+
+/* --- Customer Service Styling --- */
+.footer-top {
+  text-align: center;
+  /* 50px -> 3.125rem */
+  margin-bottom: 3.125rem;
+}
+
+/* De ALLEREERSTE paragraaf (Customer service titel) */
+.footer-top p:first-child {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.9rem;
+  /* 10px -> 0.625rem */
+  margin-bottom: 0.625rem;
+}
+
+/* De TWEEDE paragraaf (De uitlegtekst) */
+.footer-top p:nth-child(2) {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  /* 20px -> 1.25rem */
+  margin-bottom: 1.25rem;
+}
+
+/* De DERDE paragraaf of het LAATSTE element (bijv. een e-mail link) */
+.footer-top p:nth-child(3),
+.footer-top p:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* --- Logo Styling --- */
+
+
+.footer-logo img {
+  /* Maak dit getal kleiner (bijv. 150px) om het logo verder te verkleinen */
+  width: 43.75rem; 
+  height: auto;
+  display: inline-block;
+}
+
+/* --- NEWSLETTER --- */
+.footer-newsletter {
+  /* 50px -> 3.125rem */
+  padding: 3.125rem 0;
+  /* 600px -> 37.5rem */
+  max-width: 37.5rem;
+}
+
+/* De titel van de nieuwsbrief (eerste kind) */
+.footer-newsletter h3:first-child {
+  font-size: 1rem;
+  /* 20px -> 1.25rem */
+  margin-bottom: 1.25rem;
+}
+
+.newsletter-form {
+  display: flex;
+  /* 15px -> 0.9375rem */
+  gap: 0.9375rem;
+  /* 25px -> 1.5625rem */
+  margin: 1.5625rem 0;
+}
+
+/* De input binnen het formulier */
+.newsletter-form input {
+  flex: 1;
+  
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 1.875rem;
+  border: none;
+  background-color: var(--color-background); /* Hersteld: was background: var */
+}
+
+/* De groene subscribe knop */
+.newsletter-form button {
+  background-color: #84a07c; 
+  color: var(--color-second);
+  border: none;
+  padding: 0 1.875rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* De kleine privacy tekst (laatste kind van de container) */
+.footer-newsletter p:last-child {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* --- FOOTER SUCCESVOL --- */
+
+.success-wrapper {
+  display: none; /* Standaard onzichtbaar */
+}
+
+.success-box {
+  background-color: #e9f5ed; 
+  color: #3d634a;           
+  /* 15px 20px -> 0.9375rem 1.25rem */
+  padding: 0.9375rem 1.25rem;
+  /* 8px -> 0.5rem */
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 0.95rem;
+  /* 10px -> 0.625rem */
+  margin: 0.625rem 0;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Als we de class 'is-sent' toevoegen via JS, wisselen we de weergave */
+.newsletter-state-manager.is-sent .form-wrapper {
+  display: none;
+}
+
+.newsletter-state-manager.is-sent .success-wrapper {
+  display: block;
+}
+
+/* Animatie voor een zachte overgang */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.3125rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Je bestaande styling voor de input/button (finetuning) */
+.input-wrapper {
+  background: var(--color-primary);
+  border-radius: 3.125rem;
+  padding: 0.5rem 1.25rem;
+  flex: 1;
+  display: flex;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+button[type="submit"] {
+  background-color: #8da077;
+  color: var(--color-second);
+  border: none;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  text-transform: lowercase; /* match met screenshot */
+}
+
+
+/* --- Navigatie / Accordion Styling --- */
+.footer-nav .nav-item {
+  border: 0.0625rem solid #3b82f6; /* De blauwe focus-lijn uit je screenshot */
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav span {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Het pijltje omhoog via een pseudo-element */
+.footer-nav span::after {
+  content: '∧';
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0.625rem 0 0 0;
+}
+
+.sub-menu li a {
+  color: var(--color-second);
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 2.5;
+  opacity: 0.9;
+}
+
+
+
+/* Het pijltje rechts */
+.arrowblack {
+  width: 0.625em;
+  height: 0.625em;
+  border-right: 0.125em solid var(--color-text);
+  border-bottom: 0.125em solid var(--color-text);
+  transform: rotate(45deg);
+  transition: 0.3s;
+  
+}
+
+details[open] .arrowblack {
+  transform: rotate(-135deg); /* Pijl wijst omhoog als het open is */
+}
+
+.contentblack {
+  padding-bottom: 1.5625rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Gebruik van first-child voor de tekst binnenin */
+.contentblack p:first-child {
+  margin-top: 0;
+}
+
+/* De container voor de tekst en de pijl */
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Houdt de tekst aan de linkerkant */
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  position: relative; /* Nodig om de pijl absoluut te positioneren */
+  width: 100%;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* De zwarte pijl naar rechts verplaatsen */
+.arrowblack {
+  position: absolute;
+  right: 0; /* Dwingt de pijl naar de uiterste rechterkant */
+  width: 0.625em;
+  height: 0.625em;
+  border-right: 0.125em solid var(--color-text); /* De kleur is hier zwart */
+  border-bottom: 0.125em solid var(--color-text);
+  transform: rotate(-45deg); /* Pijl die naar rechts wijst */
+  transition: 0.3s ease;
+}
+
+/* Animatie als de accordion opent */
+details[open] .arrowblack {
+  transform: rotate(45deg); /* Draait naar beneden bij openen */
+}
+
+/*FOOTER*/
+
+.footer-section {
+  
+  color: var(--color-background);
+  padding: 5rem 1.25rem 2.5rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* --- LOGO EN NIEUWSBRIEF --- */
+.newsletter-container img {
+  width: 100%;
+  max-width: 75rem;
+  display: block;
+  margin: 0 auto 3.75rem;
+}
+
+/* Gebruik child-selector voor de eerste tekst na de nieuwsbrief label */
+.newsletter-container h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5625rem;
+  max-width: 37.5rem;
+}
+
+/* --- DE ACCORDEONS (OUR COMPANY / SERVICE) --- */
+.footer-links {
+  margin-top: 3.125rem;
+}
+
+/* EERSTE accordeon (Our Company): krijgt een lijn boven én onder */
+details:first-of-type {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* TWEEDE accordeon (Service): krijgt alleen een lijn onder (om dubbele lijnen te voorkomen) */
+details:nth-of-type(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* De witte pijl */
+.arrowwhite {
+  width: 0.625em;
+  height: 0.625em;
+  border-right: 0.125em solid var(--color-second);
+  border-bottom: 0.125em solid var(--color-second);
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+details[open] .arrowwhite {
+  transform: rotate(-135deg);
+}
+
+/* --- ADRES GEGEVENS --- */
+/* Gebruik nth-last-child om de 'About' titel te stylen zonder extra class */
+.footer-section > p:nth-last-child(5) {
+  font-weight: bold;
+  margin-top: 3.125rem;
+  margin-bottom: 0.9375rem;
+}
+
+/* De rest van de adresregels (Yoisho Matcha, E-mail, etc.) */
+.footer-section > p:nth-last-child(-n+4) {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+  opacity: 0.9;
+}
+
+/* --- LINKS IN DE ACCORDEON --- */
+.footer-content ul {
+  list-style: none;
+  padding: 0 0 1.25rem 0;
+}
+
+.footer-content a {
+  color: var(--color-second);
+  text-decoration: none;
+  opacity: 0.8;
+  line-height: 2;
+  font-size: 0.95rem;
+}

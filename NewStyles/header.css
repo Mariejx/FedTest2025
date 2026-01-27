@@ -1,0 +1,185 @@
+/* 3. ANNOUNCEMENT BAR */
+.announcement-bar {
+  background-color: var(--color-primary);
+  color: var(--color-second);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.announcement-bar button { 
+  background: none; 
+  border: none; 
+  color: var(--color-second); 
+  cursor: pointer; 
+}
+
+.announcement-text-container {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.25em; /* Pas aan naar je font-hoogte */
+  overflow: hidden;
+}
+
+.announcement {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(1.25em); /* Komt van beneden */
+  margin: 0;
+  white-space: nowrap;
+}
+
+.announcement.active {
+  opacity: 1;
+  transform: translateY(0); /* Staat in het midden */
+}
+
+/* 4. TRANSPARANTE HEADER */
+.main-header {
+  position: absolute; 
+  top: 2.5rem; 
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  z-index: 1000;
+}
+
+.logo img { 
+  height: 1.5625rem; 
+  filter: brightness(0) invert(1); 
+} 
+
+.header-right { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.9375rem; 
+}
+
+/* Specifieke styling voor header knoppen met nth-child */
+.header-right .icon-btn:first-child .lucide {
+  color: var(--color-second); /* Eerste icoon (bijv. Search) */
+}
+
+.header-right .icon-btn:nth-child(2) .lucide {
+  color: var(--color-second); /* Tweede icoon (bijv. Cart) */
+}
+
+.icon-btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn img {
+  width: 1.375rem;
+  height: 1.375rem;
+  stroke-width: 1.2px;
+  display: block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -0.3em;      /* Speel hiermee om het cijfer verticaal te verplaatsen */
+  right: -0.3em;    /* Speel hiermee om het cijfer horizontaal te verplaatsen */
+  background-color: var(--color-three); /* Felrood valt goed op */
+  color: var(--color-background);
+  font-size: 0.6875rem;
+  font-weight: bold;
+  padding: 0.125em 0.375em;
+  border-radius: 50%;
+  display: none; /* Verberg de badge als de mand leeg is */
+}
+
+/* De animatie-class die we met JS toevoegen */
+.animate-pop {
+  display: block; /* Maak zichtbaar zodra er iets in zit */
+  animation: badgePop 0.3s ease-out;
+}
+
+@keyframes badgePop {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Hamburger menu */
+.menu-open-btn { 
+  background: none; 
+  border: none; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.3125rem; 
+  cursor: pointer; 
+}
+/*https://developer.mozilla.org/en-US/  Hamburger menu*/
+.menu-open-btn span { 
+  display: block; 
+  width: 1.375rem; 
+  height: 0.09375rem; 
+  background-color: var(--color-second); 
+}
+
+/* 5. NAV MENU (Slide-out) */
+.nav-menu {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-background);
+  z-index: 2000;
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  translate: 100% 0;
+  transition: translate 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-menu.toonMenu { 
+  translate: 0 0; 
+}
+
+.menu-header { 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+.menu-close-btn { 
+  background: none; 
+  border: none; 
+  font-size: 2.5rem; 
+  color: var(--color-primary); 
+  cursor: pointer; 
+}
+
+.menu-links { 
+  list-style: none; 
+  margin-top: 1.25rem; 
+  flex-grow: 1; 
+}
+
+.menu-links li { 
+  margin-bottom: 0.625rem; 
+}
+
+.menu-links li a {
+  font-family: serif;
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  letter-spacing: -0.0625rem;
+}
+
+
+
+
+

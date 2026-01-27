@@ -1,0 +1,739 @@
+/****************/
+/* Hoofdpagina*/
+/****************/
+
+ 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica', sans-serif; background-color: #fcf9f3; overflow-x: hidden; }
+/* 1. DE :ROOT (Variabelen goed gezet) */
+:root {
+  --color-text: #000000;         
+  --color-background: #faf4f1;
+  --color-primary: #503024;      
+  --color-second: #ffffff;       
+  --color-three: #e32c2c;  
+  --color-grey: rgb(128, 124, 124); 
+  --color-green:#4f772d;
+}
+
+/* 2. BASIS RESET */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body { 
+  font-family: 'Helvetica', Arial, sans-serif; 
+  background-color: var(--color-background); 
+  overflow-x: hidden; 
+  color: var(--color-text);
+}
+
+
+
+
+
+/* 6.HEADER FOTO HERO */
+
+
+.hero-section { 
+  position: relative; 
+  height: 60vh; 
+  width: 100%; 
+  overflow: hidden;
+}
+
+/* Background image */
+
+.hero-bg { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  filter: brightness(0.7); 
+}
+
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  right: 1.25rem;
+  transform: translateY(-50%);
+  color: var(--color-second);
+  text-align: left;
+  max-width: 600px;
+}
+
+
+
+.hero-content h1 { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 2.5rem; 
+  font-weight: 100; 
+  line-height: 1.1; 
+  margin-bottom: 1.5rem;
+  color: var(--color-second);
+}
+
+.hero-content h1 em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 0.0625rem solid var(--color-second);
+  border-radius: 0.5rem;
+  color: var(--color-second);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+
+.hero-btn:hover {
+  background-color: var(--color-second);
+  color: var(--color-primary);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+/*********************/
+/* CarouselBUNDLES   */
+/*********************/
+main .carouselbol {
+  background-color: var(--color-background);
+  padding: 0;
+}
+
+/* Titel van de sectie */
+main .carouselbol h2 {
+  font-family: Arial;
+  font-size: 1.9em;
+  font-weight: lighter;
+  padding: 1.25rem;
+  margin: 0;
+}
+
+/* De lijst */
+main .carouselbol ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  border-top: 0.0625rem solid var(--color-grey);
+  border-bottom: 0.0625rem solid var(--color-grey);
+}
+
+main .carouselbol ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* De product items */
+main .carouselbol ul li {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  /* Alleen rechterlijn voor de verticale scheiding */
+  border-right: 0.0625rem solid var(--color-grey); 
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-background);
+}
+
+/* Verwijder de lijn bij het laatste product */
+main .carouselbol ul li:last-child {
+  border-right: none;
+}
+
+/* De LABELS container */
+main .carouselbol ul li .labels {
+  position: absolute;
+  top: 1.875rem;
+  left: 1.875rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+
+/* Het EERSTE label (bijv. de rode Bestseller badge) */
+main .carouselbol ul li .labels *:first-child {
+  background-color: var(--color-three);
+  color: var(--color-second);
+  font-size: 0.625rem;
+  padding: 0.1875rem 0.375rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* Het TWEEDE label (bijv. de witte tag) */
+main .carouselbol ul li .labels *:nth-child(2) {
+  background-color: var(--color-second);
+  color: var(--color-text);
+  font-size: 0.625rem;
+  padding: 0.1875rem 0.375rem;
+  font-weight: bold;
+  width: fit-content;
+  border: 0.0625rem solid var(--color-grey);
+}
+
+/* De product afbeelding */
+main .carouselbol ul li img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin-bottom: 2.5rem;
+}
+
+/* De tekst container onderaan (H3) */
+main .carouselbol ul li h3 {
+  margin-top: auto;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
+}
+
+/* De productnaam (Eerste tekst in de h3) */
+main .carouselbol ul li h3 span:first-child {
+  font-weight: normal;
+}
+
+/* De prijs (Tweede tekst/span in de h3) */
+main .carouselbol ul li h3 span:last-child {
+  font-weight: lighter;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+/*SECTION 2 WHY IS OUR MATCHA*/
+
+main .IntroWhyMatcha {
+  padding: 3.75rem 1.25rem; 
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* De Titel (gebruik :first-child als je geen extra class wilt) */
+main .IntroWhyMatcha h2 {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 2.8rem;   /* Maak de titel erg groot  */
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+  max-width: 50rem;    /* Voorkomt dat de titel te breed wordt */
+  font-weight: 400;
+}
+
+/* De Paragrafen */
+main .IntroWhyMatcha p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  max-width: 34.375rem;    /* hou de tekst smal */
+  margin-bottom: 1.5em;
+  
+}
+
+/* De Handtekening (het laatste element) */
+main .IntroWhyMatcha .signature {
+
+  font-family: 'arial'; /* Bijv. Google Font 'Dancing Script' */
+  font-size: 2.8rem;
+  align-self: flex-end; /* Zet de handtekening aan de rechterkant */
+  margin-top: 0.625rem;
+  margin-right: 5%;
+}
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+/* section 3 JAPAN*/
+.image-collage {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  /* Gebruik min-height in plaats van height voor flexibiliteit */
+  min-height: 31.25rem; 
+  height: auto;
+  aspect-ratio: 16 / 9; /* Houdt de verhouding goed op desktop */
+  margin: 2.5rem auto;
+  overflow: visible; /* Bladeren mogen soms iets uitsteken voor een speels effect */
+  display: flex;
+  align-items: center;
+}
+
+/* De bladeren als achtergrond-decoratie */
+.bg-leaves {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%; /* Iets groter dan de container voor overlap */
+  height: 110%;
+  object-fit: contain;
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none; /* Je kunt door de bladeren heen klikken */
+}
+
+/* De foto van Japan (rechts) */
+.photo-japan {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 45%; /* Iets groter voor betere zichtbaarheid */
+  z-index: 2;
+  box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.05); /* Zachte schaduw voor diepte */
+}
+
+/* De foto van de vrouw (links) */
+.photo-woman {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 38%;
+  z-index: 3;
+  box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.05);
+}
+
+.image-collage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+/*Foto's Matcha kwaliteit Sectie 4*/
+
+.matcha-compare {
+  text-align: center;
+  margin-top: 6.25em;
+  padding: 3.125em 1.25em;
+  background-color: var(--color-background);
+}
+
+.compare-container {
+  position: relative;
+  display: flex; 
+  width: 100%;
+  max-width: 37.5em;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-second);
+  overflow: hidden;
+}
+
+/* De EERSTE afbeelding (meestal de 'slechte' matcha - achtergrond) */
+.compare-container img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* De TWEEDE afbeelding (de 'goede' matcha - slider deel) */
+.compare-container img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* De divider lijn */
+.divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 0.125rem;
+  background-color: var(--color-primary);
+  z-index: 3;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+}
+
+/* De handle (bolletje) binnen de divider */
+.divider *:first-child {
+  position: absolute;
+  left: -0.625em;
+  top: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  background-color: var(--color-second);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: grab;
+}
+
+/* De labels (bijv. span elementen onderin) */
+
+/* Het LINKER label (eerste span na de container) */
+.compare-container span:first-of-type {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translateX(-50%);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 4;
+  transition: top 0.3s ease;
+}
+
+/* Het RECHTER label (tweede span na de container) */
+.compare-container span:nth-of-type(2) {
+  position: absolute;
+  top: 90%;
+  right: 25%;
+  transform: translateX(50%);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 4;
+  transition: top 0.3s ease;
+}
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+/* Container voor beide secties */
+.matcha-experience-wrapper {
+  background-color: var(--color-background); 
+}
+
+/* De TITEL (Eerste element in de wrapper) */
+.matcha-experience-wrapper *:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.8rem;   
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+  max-width: 50rem;    
+  font-weight: 400;
+  text-align: center;
+  margin-left: auto; /* Zorgt voor centrering i.c.m. max-width */
+  margin-right: auto;
+}
+
+/* De schuingedrukte woorden (hover-word) */
+.matcha-experience-wrapper .hover-word {
+  font-style: italic; 
+  color: inherit;     
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Specifieke styling voor het EERSTE hover-woord */
+.matcha-experience-wrapper .hover-word:first-of-type {
+  text-decoration: underline dotted 0.0625rem; /* Subtiel lijntje onder het eerste woord */
+}
+
+/* DE HOVER STATE (Geldt voor alle hover-woorden) */
+.matcha-experience-wrapper .hover-word:hover {
+  color: #4f772d;             
+  font-weight: 700;           
+  text-shadow: 0.03125em 0 0 #4f772d; 
+  transform: scale(1.05) translateY(-0.125rem); /* 2px -> 0.125rem */
+}
+
+
+
+/* ========================================================================================================================================================= */
+
+/* Sectie 5: Video Styling */
+.videomatcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6.25rem 5% 3.125rem 5%; /* Veel ruimte boven, minder onder */
+}
+
+.videomatcha video {
+  width: 90%;
+  max-width: 68.75rem;
+  height: auto;
+  border-radius: 0.25rem; /* Subtiele afronding zoals in high-end shops */
+}
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+/* Sectie 6: Membership Styling */
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 10% 7.5rem 10%; /* Ruime marge onderaan */
+}
+
+.membership-container {
+  max-width: 40.625rem;
+}
+
+.membership h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--color-text);
+  margin-bottom: 1.875rem;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.membership p {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #332a24;
+  margin-bottom: 3.125rem;
+}
+
+/* De Subscribe Knop */
+.btn-subscribe {
+  display: inline-block;
+  padding: 1.125rem 3.125rem;
+  border: 0.075rem solid var(--color-primary);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-transform: lowercase;
+  transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+
+/* ========================================================================================================================================================= */
+
+/*section 6 BECOME A PARTNER*/
+
+.partner-section {
+  position: relative;       /* Nodig om elementen erin te kunnen stapelen */
+  width: 100%;
+  min-height: 80vh;         /* Bepaalt hoe hoog de sectie is */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;         /* Zorgt dat de foto niet buiten de sectie steekt */
+}
+
+.background-img {
+  position: absolute;       /* Haalt de foto uit de normale tekststroom */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Zorgt dat de foto mooi vult zonder te vervormen */
+  z-index: -1;              /* Drukt de foto naar de achtergrond (onder de tekst) */
+}
+
+.partner-content {
+  position: relative;       /* Zorgt dat de tekst bovenop de absolute foto staat */
+  z-index: 1;               /* Altijd hoger dan de foto (-1) */
+  text-align: center;
+  color: var(--color-second);
+  max-width: 50rem;
+  padding: 2.5rem;
+}
+
+.partner-content h2 {
+  font-size: 2.0em;
+  color: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.partner-content p {
+  font-size: 1.0em;
+  font-weight: lighter;
+}
+/*de knop */
+.btn-partner {
+  display: inline-block;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  padding: 0.9375rem 2.5rem;
+  text-decoration: none;
+  border-radius:0.75rem;
+  margin-top: 1.5625rem;
+  font-family: sans-serif;
+}
+
+
+/* ========================================================================================================================================================= */
+
+/* Blog CSS Code */
+
+/* 1. De Sectie Container */
+.blog-carousel {
+  padding: 5rem 5%;
+  background-color: var(--color-background);
+}
+
+/* De Titel (h2 is het eerste kind van blog-carousel) */
+.blog-carousel h2:first-child {
+  font-size: 3.0em;
+  font-weight: lighter;
+  margin-bottom: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2. De Carousel Track (het tweede kind) */
+.carousel-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1.25rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* 3. De Kaarten */
+.blog-card {
+  flex: 0 0 85%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+
+/* De Afbeelding (eerste kind van blog-card) */
+.blog-card img:first-child {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  display: block;
+}
+
+/* De Titel van de blog (h3 is het tweede kind) */
+.blog-card h3:nth-child(2) {
+  font-family: serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom:0.9375rem ;
+  color: var(--color-text);
+  z-index: 2;
+}
+
+/* De Tekst (p is het derde kind) */
+.blog-card p:nth-child(3) {
+  font-family: sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 1.5625rem;
+  z-index: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 4. Interactie */
+.blog-card:hover img:first-child {
+  transform: scale(1.1);
+}
+
+.readblog-btn {
+display: block;
+  width: 100%;            /* Neemt de volle breedte aan */
+  max-width: 75rem;      /* Optioneel: limiet zodat hij niet té breed wordt op 4K schermen */
+  margin: 1.25rem auto 0 auto; /* Centreert de knop */
+  padding:1.125rem;
+  border: 0.09375rem solid var(--color-primary);
+  border-radius: 0.9375rem;    /* De ronde hoeken uit je screenshot */
+  text-align: center;
+  text-decoration: none;
+  color:var(--color-text);
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+/* LINK PX EN REM UITLEG: https://elementor.com/blog/nl/px-naar-rem-online-omzetter-conversietabellen/ */
+

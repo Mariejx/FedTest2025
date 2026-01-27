@@ -1,0 +1,1095 @@
+.header-right {
+  display: flex;
+  align-items: center;
+  
+  gap: 0.9375rem
+}
+
+/* Alle knoppen in de header-right op de donkere pagina */
+.header-right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* De eerste knop (Zoek-icoon) */
+.header-right button:nth-child(1) i {
+  color: var(--color-text); /* Zwart */
+  stroke-width: 1.2;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* De tweede knop (Winkelmand) */
+.header-right button:nth-child(2) i {
+  color: var(--color-text); /* Zwart */
+  stroke-width: 1.2;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* De derde knop (Hamburger menu) */
+.header-right button:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+
+/* De streepjes van de hamburger zwart maken */
+.header-right button:nth-child(3) span {
+  display: block;
+  width: 1.375rem;
+  height: 0.09375rem;
+  background-color: var(--color-text); /* Zwart */
+}
+
+/* --- De Sluitknop (X) in het menu --- */
+
+
+/* De eerste knop (Search) */
+.header-right button:nth-child(1) i {
+  color: var(--color-text);
+} /* BLIJFT EEN ERROR */
+
+
+
+
+/* De tweede knop (Shopping Bag) */
+.header-right button:nth-child(2) i {
+  color: var(--color-text);
+}
+
+/* De derde knop (Hamburger menu streepjes) */
+.header-right button:nth-child(3) span {
+  background-color: var(--color-text);
+}
+
+
+
+/*PRODUCT CAROUSSEL*/
+
+/* Basis layout */
+.product-container {
+  background-color: var(--color-background);
+  padding: 1.25rem;;
+  
+}
+
+/* De Slider */
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  background: var(--color-background);
+  scrollbar-width: none;
+}
+
+.slider-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 1.875rem;
+}
+
+/* De Streepjes met first-child */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.9375rem 0;
+}
+
+.dots span {
+  width: 1.875rem;
+  height: 0.125rem;
+  background: #3c261d;
+  opacity: 0.2;
+}
+
+/* Alleen het eerste streepje is donker */
+.dots span:first-child {
+  opacity: 1;
+}
+
+/* De Labels met first-child */
+.labels {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.9375rem;
+}
+
+.labels span {
+  border: 0.0625rem solid var(--color-background);
+  padding: 0.3125rem 0.625rem;
+  font-size: 0.625rem;
+  font-weight: bold;
+}
+
+/* Alleen het eerste label is rood */
+.labels span:first-child {
+  background: #e55e4d;
+  color: var(--color-second);
+  border: none;
+}
+
+/* Tekst styling */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  color: var(--color-text)
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  font-weight: lighter;
+}
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION 3*/
+.product-description {
+  background-color: var(--color-background);
+  padding: 2.5rem 5%;
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* De horizontale lijn bovenin */
+.product-description hr {
+  border: none;
+  border-top: 0.0625rem solid var(--color-text);
+  margin-bottom: 1.875rem;
+}
+
+/* Alle paragrafen een standaard afstand geven */
+.product-description p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+/* De ALLEREERSTE paragraaf (optioneel iets extra ruimte geven) */
+.product-description p:first-of-type {
+  margin-top: 0.625rem;
+}
+
+/* De LAATSTE paragraaf (waar de linkjes in staan) */
+.product-description p:last-of-type {
+  margin-top: 1.875rem; /* Iets meer ruimte boven de linkjes */
+}
+
+/* De linkjes specifiek stylen (100g en 50g) */
+.product-description a {
+  color: var(--color-text);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.product-description a:hover {
+  opacity: 0.6;
+}
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+/*SECTION 3 BUNDLE */
+
+/* Container styling */
+.bundle-section {
+  background-color: var(--color-background);
+  padding: 1.25rem;
+  max-width: 31.25rem;
+  margin: auto;
+}
+
+.bundle-section h3 {
+  font-family: serif;
+  font-size: 1.9rem;
+  font-weight: lighter;
+  margin-bottom: 0.625rem;
+}
+
+.bundle-divider {
+  border: 0;
+  border-top: 1px solid var(--color-background);
+  margin-bottom: 1.25rem;
+}
+
+/* Verberg radio maar behoud toegankelijkheid */
+.bundle-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.bundle-item {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.9375rem;
+}
+
+/* De Box */
+.bundle-box {
+  display: block;
+  border:  0.125rem solid #e0e0e0;
+  border-radius: 1.5rem;
+  background:var(--color-second);
+  transition: border-color 0.3s;
+  position: relative;
+  overflow: hidden; /* Houdt de groene balk binnen de ronde hoeken */
+}
+
+/* Styling voor geselecteerde staat */
+.bundle-item input[type="radio"]:checked + .bundle-box {
+  border-color: #84a07c;
+}
+
+/* De bovenste rij (tekst en prijs) */
+.row {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  gap: 0.75rem;
+}
+
+.circle {
+  width: 1.25em;
+  height: 1.25em;
+  border: 0.125em solid var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Radio stip */
+.bundle-item input[type="radio"]:checked + .bundle-box .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.625em;
+  height: 0.625em;  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.text-wrap {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.tag {
+  background: var(--color-primary);
+  color: var(--color-second);
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.75rem;
+  font-size: 0.7rem;
+  margin-left: 0.3125rem;
+  vertical-align: middle;
+}
+
+.price {
+  margin-left: auto;
+  font-weight: 600;
+}
+
+/* Groene sectie */
+.extra-green {
+  background-color: #84a07c;
+  color: var(--color-second);
+  padding: 0.9375rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.bundle-img {
+  width: 3.75rem;
+  height: 3.75rem;
+  background: var(--color-second);
+  border-radius: 0.5rem;
+  object-fit: contain;
+  padding: 0.3125rem;
+}
+
+.extra-text {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc {
+  font-size: 0.95rem;
+}
+
+.promo {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.promo s {
+  display: block;
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
+
+/* Badge 'Most Popular' */
+.popular-badge {
+  position: absolute;
+  top: -0.75rem;
+  right: 1.25rem; /* 20px */
+  background: var(--color-second);
+  border: 0.0625rem solid var(--color-second);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 5;
+}
+
+/* Add to cart button */
+.cart-btn {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-second);
+  border: none;
+  padding: 1.125rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.625rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+/*SECTION 4 ACCORDEON*/
+/* De lijst in de accordeon */
+.accordion-section {
+  max-width: 43.75rem;
+  margin: 2.5rem auto;
+  font-family: Arial, sans-serif;
+  color: var(--color-primary);
+  padding: 0 0.9375rem;
+}
+
+/* De lijnen tussen de items met pseudo-classes */
+details {
+  border-bottom: 0.0625rem solid var(--color-text);
+}
+
+details:first-of-type {
+  border-top: 0.1rem solid var(--color-text);
+}
+
+
+
+
+.summary-left i {
+  width: 1.375rem;
+  height: 1.375rem;
+  stroke-width: 0.075rem;
+  color: #332a24;
+}
+
+.summary-left span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+
+.arrowblack {
+  width: 0.625em;
+  height: 0.625em;
+  border-right: 0.09375em solid var(--color-primary);
+  border-bottom: 0.09375em solid var(--color-primary);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-right: 0.3125rem;;
+}
+
+/* Draaien van het pijltje als details open is */
+details[open] .arrowblack {
+  transform: rotate(-135deg);
+}
+
+/* De inhoud (tekst onder de titel) */
+.contentblack {
+  /* Inspringing: 22px icoon + 15px gap = 37px */
+  padding: 0 0 1.875rem 2.3125rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #5c4b41;
+}
+.contentblack p {
+  color: var(--color-text);
+
+}
+.contentblack ul {
+  margin: 0.9375rem 0;
+  padding-left: 1.25rem;  
+  color: var(--color-text);
+}
+
+.contentblack li {
+  padding: 0.25rem 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION 5 COMPLETE YOUR SET*/
+
+.complete-carousel {
+  padding: 60px 20px;
+  background-color: var(--color-background);
+  font-family: sans-serif;
+  color: var(--color-primary);
+}
+
+/* Header styling */
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+
+.carousel-header h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Navigatie knoppen (Pijltjes) */
+.carousel-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 0.0625rem solid var(--color-background);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-background);
+}
+
+/* De carrousel track */
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 1.25rem;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Product Kaart */
+.product-card {
+  flex: 0 0 calc(25% - 1.125rem); 
+  min-width: 13.75rem;
+  text-align: center;
+}
+
+.product-image {
+  background-color: var(--color-background); /* De lichte grijze achtergrond uit je foto */
+  border-radius: 1.25rem; /* Ronder, net als de bundels */
+  margin-bottom: 1rem;
+  aspect-ratio: 1 / 1; /* Zorgt voor een perfect vierkant */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-card h4 {
+  font-size: 1.1rem;
+  margin: 0.625rem 0 0.25rem;
+  font-weight: 500;
+}
+
+.product-price {
+  color: #707070;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* De 'Add to cart' link met het specifieke lijntje */
+.add-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  border-bottom: 0.09375rem solid var(--color-primary);
+  
+  padding-bottom: 0.0625rem;
+  transition: opacity 0.2s;
+}
+
+.add-link:hover {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION 6 WHY PLEOPLE LOVE MATCHA*/
+.whypeople-section {
+  background-color: var(--color-primary); 
+  color: var(--color-second);
+  padding-bottom: 3.125rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.whypeople-section h2{
+  color: var(--color-second);
+}
+/* De header met de foto */
+.why-header {
+  position: relative;
+  text-align: left;
+  padding: 3.75rem 1.25rem 2.5rem;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15.625rem;
+  object-fit: cover;
+  opacity: 0.4; /* Maakt de foto donkerder zodat tekst leesbaar is */
+  z-index: 1;
+}
+
+.header-contentwhy {
+  position: relative;
+  z-index: 2;
+  max-width: 37.5rem;
+}
+
+.header-contentwhy h2 {
+  font-family: serif; /* Elegant font zoals in screenshot */
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.header-contentwhy p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* De accordeons */
+.why-accordions {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+details {
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.2);
+  padding: 0.625rem 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+summary {
+  list-style: none;
+  display: flex;
+  /* Zorgt dat alles vooraan begint */
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  font-weight: 500; /* Iets minder dik voor de Yoisho look */
+  position: relative;
+  font-size: 1.1rem;
+  
+}
+
+summary::-webkit-details-marker { 
+  display: none; 
+}
+
+.summary-text{
+  margin-right: auto; /* Dit duwt alles wat NIET absoluut is naar links */
+  text-align: left;
+}
+/* Hartje icoon */
+.heart {
+  margin-right: 0.75em; /* De ruimte tussen hartje en tekst */
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Pijltje rechts */
+.arrowwhite {
+  position: absolute;
+  right: 0.625rem;
+  width: 0.625em;
+  height: 0.625em;
+  border-right: 0.125em solid var(--color-second);
+  border-bottom: 0.125em solid var(--color-second);
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+details[open] .arrowwhite {
+  transform: rotate(-135deg);
+}
+
+/* De inhoud */
+.contentwhy {
+  padding: 0.625rem 0 1.25rem 2.5rem;
+  line-height: 1.6;
+  color: var(--color-second);
+}
+
+.contentwhy p:first-of-type {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION videoinfo-carrousel */
+
+/* Container styling */
+.videoinfo-carrousel {
+  padding: 3.75rem 1.25rem;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Koppen boven de carrousel */
+.videoinfo-carrousel h2 {
+  font-family: serif; 
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.videoinfo-carrousel > p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 43.75rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+/* De track die horizontaal scrollt */
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Zorgt dat kaarten 'vastklikken' bij scrollen */
+  scrollbar-width: none; /* Verbergt scrollbar in Firefox */
+  padding-bottom: 1.25rem;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Verbergt scrollbar in Chrome/Safari */
+}
+
+/* De individuele videokaarten */
+.video-card {
+  flex: 0 0 320px; /* Breedte van de kaart */
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+/* De wrapper voor de video (Vierkant) */
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maakt de video exact vierkant zoals in je screenshot */
+  flex: 0 0 20rem; /* Ronde hoeken */
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: var(--color-background); /* Placeholder kleur */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Vult het hele vierkant zonder zwarte balken */
+}
+
+/* Titels van de stappen */
+.video-card h3 {
+  font-family: serif;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Beschrijving tekst */
+.video-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+
+
+
+/* PSEUDO-CLASS: De EERSTE kaart krijgt de groene rand */
+.video-card:first-child .video-wrapper {
+  border: 0.0625rem solid #84a07c;
+}
+
+/* PSEUDO-CLASS: De TWEEDE kaart krijgt een subtiele schaduw */
+.video-card:nth-child(2) .video-wrapper {
+  box-shadow: 0 0.625rem 1.875rem rgba(60, 38, 29, 0.05);
+}
+
+/* PSEUDO-CLASS: De laatste kaart extra ruimte rechts geven */
+.video-card:last-child {
+  margin-right: 2.5rem;
+}
+
+
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+/*ANNOUCENT BAR 2*/
+
+
+
+.announcement-bar2 {
+  background-color: var(--color-second); /* Wit zoals gevraagd */
+  color: var(--color-text);            /* Zwarte letters */
+  width: 100%;
+  overflow: hidden;          /* Verbergt de tekst die buiten het scherm valt */
+  white-space: nowrap;       /* Zorgt dat alles op één regel blijft */
+  padding: 0.75rem 0;
+  border-top: 0.0625rem solid var(--color-primary);
+  border-bottom: 0.0625rem solid var(--color-primary); /* Optioneel: dun lijntje onder de balk */
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.announcement-track2 {
+  display: inline-block;
+  padding-left: 100%;       /* Laat de tekst van rechts beginnen */
+  animation: scroll-left2 15s linear infinite; /* Oneindige loop */
+}
+
+.announcement-track2 span {
+  display: inline-block;
+  padding-right: 80px;      /* De ruimte tussen de twee teksten */
+}
+
+/* De animatie die de tekst naar links trekt */
+@keyframes scroll-left2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+/*SECTION 9 RELATED*/
+
+.Related-carousel {
+  padding: 60px 0; /* Geen padding aan zijkant voor de volledige lijn */
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: sans-serif;
+  border-top: 0.0625rem solid var(--color-background); /* Lijn over de hele breedte bovenin */
+}
+
+.Related-carousel h2 {
+  font-family: serif;
+  font-size: 2.4rem;
+  margin-left: 1.25rem; 
+  margin-bottom: 1.875rem;
+}
+.Related-carousel ul li h3 {
+  display: flex;
+  justify-content: space-between; /* Duwt tekst naar links en prijs naar rechts */
+  align-items: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  /*font-size: 0.95rem; */
+  color: var(--color-text);
+  margin: 0;
+}
+
+.Related-carousel ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.Related-carousel ul::-webkit-scrollbar {
+  display: none;
+}
+
+.Related-carousel li {
+  flex: 0 0 50%; /* Twee items zichtbaar */
+  position: relative;
+  padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+  box-sizing: border-box;
+  /* Standaard verticale lijn aan de rechterkant */
+  border-right: 0.0625rem solid #e5e5e5;
+}
+
+
+
+/* FIRST CHILD: Specifieke padding of linkerrand indien nodig */
+.Related-carousel li:first-child {
+  padding-left: 1.25rem;
+}
+
+/* NTH-CHILD(2): Hier kun je bijvoorbeeld de labels een andere kleur geven */
+.Related-carousel li:nth-child(2) .badge {
+  background-color: #ff4d4d; /* De rode kleur uit je screenshot */
+}
+
+/* LAST CHILD: De allerlaatste lijn verwijderen voor een strakke afwerking */
+.Related-carousel li:last-child {
+  border-right: none;
+}
+
+/* Afbeeldingen */
+.Related-carousel img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5625rem;
+}
+
+/* Labels (Bestseller, Ceremonial Grade etc.) */
+.labels {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.badge, .tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.badge.red {
+  background-color: #ff4d4d;
+  color: var(--color-second);
+}
+
+.tag {
+  background-color: var(--color-second);
+  color: var(--color-text);
+  border: 0.0625rem solid #e5e5e5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================================================================================================= */
+
+
+
+
+
+
+/* Productnaam en Prijs naast elkaar */
+.Related-carousel h4 {
+  display: flex;
+  justify-content: space-between; /* Naam links, Prijs rechts */
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.Related-carousel h4 span {
+  font-weight: 400;
+  color: #707070;
+  font-size: 1rem;
+}
+
+/* Link styling */
+.Related-carousel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*SECTION reguently*/
+
+.freguently-section {
+  background-color: var(--color-background); /* Donkerbruin zoals in je screenshot */
+  color: var(--color-text);
+  padding: 3.75rem 1.25rem;
+  font-family: sans-serif;
+}
+
+.freguently-content h2 {
+  font-family: serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;;
+}
+
+.freguently-content p {
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+/* De Accordions */
+.freguently-accordions {
+  max-width: 56.25rem;
+}
+
+details {
+  /* Elke rij krijgt een lijn aan de bovenkant */
+  border-top: 0.0625rem solid var(--color-text);
+}
+
+/* De allerlaatste accordion krijgt ook een lijn onderaan */
+details:last-of-type {
+  border-bottom: 0.0625rem solid var(--color-text);
+}

@@ -1,0 +1,89 @@
+/* --- RESPONSIVE VOOR TELEFOON --- */
+
+
+/*Responsive Japan Foto's*/
+
+@media (max-width: 768px) {
+  .image-collage {
+    aspect-ratio: auto;
+    height: 450px; /* Vaste hoogte voor mobiele collage */
+    margin: 20px auto;
+  }
+
+  .bg-leaves {
+    width: 140%; /* Bladeren mogen op mobiel extra groot voor vulling */
+  }
+
+  .photo-japan {
+    width: 60%;
+    top: 5%;
+    right: 2%;
+  }
+
+  .photo-woman {
+    width: 55%;
+    bottom: 5%;
+    left: 2%;
+  }
+}
+
+
+/* --- TELEFOON RESPONSIVE Matcha foto's met tekst --- */
+@media (max-width: 480px) {
+  .compare-half .label {
+    font-size: 1.1rem;
+  }
+  .divider .circle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+/* Responsiviteit IntroWhyMatcha */
+@media (max-width: 768px) {
+  main .IntroWhyMatcha h2 {
+    font-size: 2.5rem; /* Iets kleiner op telefoon */
+  }
+
+  main .IntroWhyMatcha .signature {
+    align-self: flex-start;
+    margin-right: 0;
+  }
+}
+
+
+/* Blog Responsive CSS */
+
+@media (min-width: 1024px) {
+  .blog-card {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+
+
+
+/* --- RESPONSIVE VOOR TELEFOON MATCHA PAGINA  --- */
+@media (max-width: 600px) {
+  .summary-left span {
+    font-size: 1rem;
+  }
+  
+  .contentblack {
+    padding-left: 0; /* Op mobiel de volledige breedte gebruiken voor leesbaarheid */
+    margin-top: -10px;
+  }
+}
+
+
+
+
+
+
+/* Mobile responsive Producten Bowl*/
+@media (max-width: 900px) {
+  .product-card {
+    flex: 0 0 calc(45% - 10px); /* 2 per rij op mobiel/tablet */
+  }
+}
