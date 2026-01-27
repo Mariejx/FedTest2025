@@ -196,12 +196,6 @@ het lukt mij niet op de hamburger menu goed te maken.
 
 </details>
 
-Herkansing:
-Tijdens mijn gesprek met Danny heb ik feedback gekregen op mijn project. Deze feedback helpt mij om mijn werk te verbeteren, zodat ik het opnieuw kan inleveren en het vak kan halen.
-Ik moet nog screenshots van de a11y-tests toevoegen aan mijn README.md en procesverslag. Ook ontbreekt de surface plane; hiervoor moet ik vijf verschillende onderwerpen kiezen. Daarnaast moet ik het kruisje en de animatie toevoegen aan de micro-interactie.
-In mijn HTML zijn sommige div-elementen beter te vervangen door section, en sommige section-elementen missen een heading of zouden beter article kunnen zijn. Verder moet ik zoveel mogelijk classes weghalen en meer gebruikmaken van bestaande CSS-selectors, zoals nth-child, om dubbele styling te voorkomen.
-Ook moet ik de Lucide-iconen vervangen door SVG’s en mijn CSS-bestanden beter structureren (bijvoorbeeld general.css, page1.css en page2.css). Tot slot moet ik overstappen op relative units zoals em, vw en vh in plaats van pixels.
-Met deze verbeterpunten ga ik mijn project aanpassen voor de herinlevering.
 
 
 
@@ -251,7 +245,37 @@ ik heb verschillende surface plane gedaan.
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="g" width="375px" alt="top">
+  <img src="" width="375px" alt="top">
+
+  toegangelijkheids test:
+  op alle twee de foto's staat test 1 naast de de andere dat waren de eerste testen met de website die ik wilde maken. doordat ik eerst een andere webiste wilde doen.
+  
+  Pagina 1
+De header wordt volledig als link voorgelezen.
+Er ontbreekt een H1-kop.
+Bundles
+Afbeeldingen bij de bundles worden niet benoemd; alleen dat het een link is.
+Alle foto’s worden genegeerd.
+Links worden wel herkend, net als buttons.
+Pagina 2
+“Most popular” wordt niet correct aangekondigd.
+Carousel / video
+De icoontjes in de carousel werken niet.
+Er wordt niet aangegeven dat het om video’s gaat.
+Er wordt ook niet verteld wat er gebeurt (bijvoorbeeld bij afspelen).
+Het is onduidelijk of je de video kunt pauzeren.
+
+De nieuwe website:
+Alle elementen worden correct aangekondigd.
+Er is nu een H1-kop aanwezig.
+Video’s kunnen worden gepauzeerd of afgespeeld.
+Afbeeldingen worden allemaal uitgelegd.
+Buttons worden correct herkend en benoemd.
+Links worden duidelijk aangekondigd.
+Kopniveaus zijn hoorbaar (heading levels werken goed).
+  
+  <img src="readme-images/IMG_2344.HEIC" width="375px" alt="top">
+  <img src="readme-images/IMG_2343.HEIC" width="375px" alt="top">
 
 
 
